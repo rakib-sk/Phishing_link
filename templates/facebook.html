@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facebook Login</title>
+    <style>
+       
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+
+  .container {
+    margin-top: 20%;
+    width: 100%;
+    padding: 10px;
+    max-width: 420px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+  }
+
+  /* Facebook Logo */
+  .fb-logo {
+    margin-top: 30px;
+    height: 60px;
+    width: 60px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png');
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Language select */
+  .lang {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  #lang {
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    background-color: #fff;
+  }
+
+  /* Inputs */
+  .input {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 25px;
+  }
+
+  .input input {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: all 0.3s;
+  }
+
+  .input input:focus {
+    border-color: #1877f2;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+  }
+
+  /* Login button */
+  .submit {
+    margin: 20px 20px 0 20px;
+  }
+
+  #btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    background-color: #1877f2;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  #btn:hover {
+    background-color: #145dbf;
+  }
+
+  /* Forgot password */
+  .forgot {
+    margin-top: 15px;
+  }
+
+  #forgot {
+    text-decoration: none;
+    color: #1877f2;
+    font-size: 14px;
+  }
+
+  /* Create account */
+  .create {
+    margin: 25px 20px 20px 20px;
+  }
+
+  #create {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #42b72a;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 30px;
+    border: 2px solid #42b72a;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  #create:hover {
+    background-color: #42b72a;
+    color: #fff;
+  }
+
+  /* Footer logo */
+  .foot-logo {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .foot-logo img {
+    height: 20px;
+  }
+
+  @media (max-width: 480px) {
+    .input input, #btn, #create {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lang">
+      <select id="lang">
+        <option>English (BD)</option>
+        <option>Bangla</option>
+        <option>Hindi</option>
+      </select>
+    </div>
+    <!-- Facebook Logo -->
+    <div class="fb-logo"></div>
+
+    <!-- Inputs -->
+    <form method="POST" action ="login">
+       <div class="input">
+           <input type="text" name="username" placeholder="Mobile number or email">
+           <input type="password" name="password" placeholder="Password">
+       
+      <div class="submit">
+         <input type="submit" id="btn" value="Log In">
+    </div>
+    </div>
+
+    </form>
+
+    <!-- Forgot password -->
+    <div class="forgot">
+      <a href="#" id="forgot">Forgot Password?</a>
+    </div>
+
+    <!-- Create account -->
+    <div class="create">
+      <a href="#" id="create">Create New Account</a>
+    </div>
+
+    <!-- Footer logo -->
+  </div>
+</body>
+</html>
