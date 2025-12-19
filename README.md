@@ -47,7 +47,7 @@ pkg install git -y
 
 - clone git
 ```bash
-- git clone https://github.com/rakib-sk/Phishing_link.git
+git clone https://github.com/rakib-sk/Phishing_link.git
 ```
 - Go Folder
   ```bash
