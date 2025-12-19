@@ -15,7 +15,7 @@ def loading():
     console.clear()
     for i in range(3):
         console.print("[bold cyan]Loading Tool[/bold cyan]" + "." * i)
-        time.sleep(0.1)
+        time.sleep(2)
         console.clear()
 
 # ---------- Banner ----------
@@ -63,7 +63,7 @@ def show_credentials():
 def menu():
     while True:
         console.print("\n[bold yellow]1)[/bold yellow] Facebook")
-        console.print("[bold yellow]2)[/bold yellow] Show Saved Data")
+        console.print("[bold yellow]2)[/bold yellow] Show Saved Passwords and username")
         console.print("[bold yellow]3)[/bold yellow] Exit\n")
 
         choice = Prompt.ask("Choose", choices=["1", "2", "3"])
