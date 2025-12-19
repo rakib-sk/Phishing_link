@@ -45,14 +45,14 @@ pkg install python
 pkg install git -y
 ```
 
-- clone git https://github.com/rakib-sk/Phishing_link.git
+- clone git
 ```bash
-
-- git clone repo link
+- git clone https://github.com/rakib-sk/Phishing_link.git
 ```
-cd phishing_link
-```
-
+- Go Folder
+  ```bash
+  cd Phishing_link
+  ```
 - Install all modules
 ```bash
 pip install .
