@@ -10,7 +10,10 @@ from rich.prompt import Prompt
 
 console = Console()
 
-# ---------- Animation ----------
+
+#Animation 
+
+
 def loading():
     console.clear()
     for i in range(3):
@@ -18,7 +21,10 @@ def loading():
         time.sleep(2)
         console.clear()
 
-# ---------- Banner ----------
+
+# Banner
+
+
 def home():
     console.clear()
 
@@ -45,7 +51,11 @@ def home():
 
     console.print(panel)
 
-# ---------- Show Credentials ----------
+
+
+# Show Credentials 
+
+
 def show_credentials():
     try:
         with open("data.txt", "r") as f:
@@ -59,7 +69,11 @@ def show_credentials():
     except FileNotFoundError:
         console.print("[bold red]Error: data.txt file not found![/bold red]")
 
-# ---------- Menu ----------
+
+
+# Menu 
+
+
 def menu():
     while True:
         console.print("\n[bold yellow]1)[/bold yellow] Facebook")
@@ -87,7 +101,10 @@ def menu():
             console.print("\n[bold red]Bye![/bold red]")
             break
 
-# ---------- Run ----------
+
+# Run
+
+
 if __name__ == "__main__":
     try:
         loading()
