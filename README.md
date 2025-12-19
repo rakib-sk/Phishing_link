@@ -32,7 +32,7 @@ Choose [1/2/3]:
 
 - Update and upgrade Termux
 ```bash
-pkg update && pkg upgrade
+pkg update && pkg upgrade -y && pkg autoclean
 ```
 
 - install Python
